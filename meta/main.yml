@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  author: your name
+  description: "Ansible role to apply RHEL 5 STIG"
+  company: your company (optional)
+  license: MIT
+  min_ansible_version: 1.8
+  platforms:
+  - name: EL
+    versions:
+      - 5
+  - name: CentOS
+    versions:
+      - 5
+  categories:
+    - system
+    - security
+
+dependencies: []
