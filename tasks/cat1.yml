@@ -1,0 +1,300 @@
+- name: "HIGH | V-770 | AUDIT | The system must not have accounts configured with blank or null passwords."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-770
+
+- name: "HIGH | V-770 | PATCH | The system must not have accounts configured with blank or null passwords."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-770
+
+- name: "HIGH | V-847 | AUDIT | The TFTP daemon must operate in 'secure mode' which provides access only to a single directory on the host file system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-847
+
+- name: "HIGH | V-847 | PATCH | The TFTP daemon must operate in 'secure mode' which provides access only to a single directory on the host file system."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-847
+
+- name: "HIGH | V-848 | AUDIT | The TFTP daemon must have mode 0755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-848
+
+- name: "HIGH | V-848 | PATCH | The TFTP daemon must have mode 0755 or less permissive."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-848
+
+- name: "HIGH | V-922 | AUDIT | All shell files must have mode 0755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-922
+
+- name: "HIGH | V-922 | PATCH | All shell files must have mode 0755 or less permissive."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-922
+
+- name: "HIGH | V-4248 | AUDIT | For systems capable of using GRUB, the system must be configured with GRUB as the default boot loader unless another boot loader has been authorized, justified, and documented using site-defined procedures."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-4248
+
+- name: "HIGH | V-4248 | PATCH | For systems capable of using GRUB, the system must be configured with GRUB as the default boot loader unless another boot loader has been authorized, justified, and documented using site-defined procedures."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-4248
+
+- name: "HIGH | V-4249 | AUDIT | The system boot loader must require authentication."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-4249
+
+- name: "HIGH | V-4249 | PATCH | The system boot loader must require authentication."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-4249
+
+- name: "HIGH | V-4268 | AUDIT | The system must not have special privilege accounts, such as shutdown and halt."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-4268
+
+- name: "HIGH | V-4268 | PATCH | The system must not have special privilege accounts, such as shutdown and halt."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-4268
+
+- name: "HIGH | V-4295 | AUDIT | The SSH daemon must be configured to only use the SSHv2 protocol."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-4295
+
+- name: "HIGH | V-4295 | PATCH | The SSH daemon must be configured to only use the SSHv2 protocol."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-4295
+
+- name: "HIGH | V-4342 | AUDIT | The x86 CTRL-ALT-DELETE key sequence must be disabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-4342
+
+- name: "HIGH | V-4342 | PATCH | The x86 CTRL-ALT-DELETE key sequence must be disabled."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-4342
+
+- name: "HIGH | V-4387 | AUDIT | Anonymous FTP accounts must not have a functional shell."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-4387
+
+- name: "HIGH | V-4387 | PATCH | Anonymous FTP accounts must not have a functional shell."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-4387
+
+- name: "HIGH | V-4687 | AUDIT | The rsh daemon must not be running."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-4687
+
+- name: "HIGH | V-4687 | PATCH | The rsh daemon must not be running."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-4687
+
+- name: "HIGH | V-4688 | AUDIT | The rexec daemon must not be running."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-4688
+
+- name: "HIGH | V-4688 | PATCH | The rexec daemon must not be running."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-4688
+
+- name: "HIGH | V-4689 | AUDIT | The SMTP service must be an up-to-date version."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-4689
+
+- name: "HIGH | V-4689 | PATCH | The SMTP service must be an up-to-date version."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-4689
+
+- name: "HIGH | V-11940 | AUDIT | The operating system must be a supported release."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-11940
+
+- name: "HIGH | V-11940 | PATCH | The operating system must be a supported release."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-11940
+
+- name: "HIGH | V-11988 | AUDIT | There must be no .rhosts, .shosts, hosts.equiv, or shosts.equiv files on the system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat1
+      - high
+      - audit
+      - V-11988
+
+- name: "HIGH | V-11988 | PATCH | There must be no .rhosts, .shosts, hosts.equiv, or shosts.equiv files on the system."
+  command: true
+  tags:
+      - cat1
+      - high
+      - patch
+      - V-11988
+

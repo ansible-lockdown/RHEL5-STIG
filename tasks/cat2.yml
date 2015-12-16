@@ -1,0 +1,5970 @@
+- name: "MEDIUM | V-756 | AUDIT | The system must require authentication upon booting into single-user and maintenance modes."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-756
+
+- name: "MEDIUM | V-756 | PATCH | The system must require authentication upon booting into single-user and maintenance modes."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-756
+
+- name: "MEDIUM | V-763 | AUDIT | The Department of Defense (DoD) login banner must be displayed immediately prior to, or as part of, console login prompts."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-763
+
+- name: "MEDIUM | V-763 | PATCH | The Department of Defense (DoD) login banner must be displayed immediately prior to, or as part of, console login prompts."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-763
+
+- name: "MEDIUM | V-766 | AUDIT | The system must disable accounts after three consecutive unsuccessful login attempts."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-766
+
+- name: "MEDIUM | V-766 | PATCH | The system must disable accounts after three consecutive unsuccessful login attempts."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-766
+
+- name: "MEDIUM | V-773 | AUDIT | The root account must be the only account having a UID of 0."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-773
+
+- name: "MEDIUM | V-773 | PATCH | The root account must be the only account having a UID of 0."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-773
+
+- name: "MEDIUM | V-775 | AUDIT | The root account's home directory (other than /) must have mode 0700."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-775
+
+- name: "MEDIUM | V-775 | PATCH | The root account's home directory (other than /) must have mode 0700."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-775
+
+- name: "MEDIUM | V-776 | AUDIT | The root account's executable search path must be the vendor default and must contain only absolute paths."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-776
+
+- name: "MEDIUM | V-776 | PATCH | The root account's executable search path must be the vendor default and must contain only absolute paths."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-776
+
+- name: "MEDIUM | V-777 | AUDIT | The root account must not have world-writable directories in its executable search path."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-777
+
+- name: "MEDIUM | V-777 | PATCH | The root account must not have world-writable directories in its executable search path."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-777
+
+- name: "MEDIUM | V-778 | AUDIT | The system must prevent the root account from directly logging in except from the system console."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-778
+
+- name: "MEDIUM | V-778 | PATCH | The system must prevent the root account from directly logging in except from the system console."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-778
+
+- name: "MEDIUM | V-787 | AUDIT | System log files must have mode 0640 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-787
+
+- name: "MEDIUM | V-787 | PATCH | System log files must have mode 0640 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-787
+
+- name: "MEDIUM | V-788 | AUDIT | All skeleton files (typically those in /etc/skel) must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-788
+
+- name: "MEDIUM | V-788 | PATCH | All skeleton files (typically those in /etc/skel) must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-788
+
+- name: "MEDIUM | V-789 | AUDIT | NIS/NIS+/yp files must be owned by root, sys, or bin."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-789
+
+- name: "MEDIUM | V-789 | PATCH | NIS/NIS+/yp files must be owned by root, sys, or bin."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-789
+
+- name: "MEDIUM | V-791 | AUDIT | The NIS/NIS+/yp command files must have mode 0755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-791
+
+- name: "MEDIUM | V-791 | PATCH | The NIS/NIS+/yp command files must have mode 0755 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-791
+
+- name: "MEDIUM | V-793 | AUDIT | Library files must have mode 0755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-793
+
+- name: "MEDIUM | V-793 | PATCH | Library files must have mode 0755 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-793
+
+- name: "MEDIUM | V-794 | AUDIT | All system command files must have mode 0755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-794
+
+- name: "MEDIUM | V-794 | PATCH | All system command files must have mode 0755 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-794
+
+- name: "MEDIUM | V-795 | AUDIT | All system files, programs, and directories must be owned by a system account."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-795
+
+- name: "MEDIUM | V-795 | PATCH | All system files, programs, and directories must be owned by a system account."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-795
+
+- name: "MEDIUM | V-796 | AUDIT | System files, programs, and directories must be group-owned by a system group."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-796
+
+- name: "MEDIUM | V-796 | PATCH | System files, programs, and directories must be group-owned by a system group."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-796
+
+- name: "MEDIUM | V-797 | AUDIT | The /etc/shadow (or equivalent) file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-797
+
+- name: "MEDIUM | V-797 | PATCH | The /etc/shadow (or equivalent) file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-797
+
+- name: "MEDIUM | V-798 | AUDIT | The /etc/passwd file must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-798
+
+- name: "MEDIUM | V-798 | PATCH | The /etc/passwd file must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-798
+
+- name: "MEDIUM | V-800 | AUDIT | The /etc/shadow (or equivalent) file must have mode 0400."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-800
+
+- name: "MEDIUM | V-800 | PATCH | The /etc/shadow (or equivalent) file must have mode 0400."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-800
+
+- name: "MEDIUM | V-808 | AUDIT | The system and user default umask must be 077."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-808
+
+- name: "MEDIUM | V-808 | PATCH | The system and user default umask must be 077."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-808
+
+- name: "MEDIUM | V-811 | AUDIT | Auditing must be implemented."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-811
+
+- name: "MEDIUM | V-811 | PATCH | Auditing must be implemented."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-811
+
+- name: "MEDIUM | V-812 | AUDIT | System audit logs must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-812
+
+- name: "MEDIUM | V-812 | PATCH | System audit logs must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-812
+
+- name: "MEDIUM | V-813 | AUDIT | System audit logs must have mode 0640 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-813
+
+- name: "MEDIUM | V-813 | PATCH | System audit logs must have mode 0640 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-813
+
+- name: "MEDIUM | V-814 | AUDIT | The audit system must be configured to audit failed attempts to access files and programs."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-814
+
+- name: "MEDIUM | V-814 | PATCH | The audit system must be configured to audit failed attempts to access files and programs."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-814
+
+- name: "MEDIUM | V-815 | AUDIT | The audit system must be configured to audit files and programs deleted by the user."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-815
+
+- name: "MEDIUM | V-815 | PATCH | The audit system must be configured to audit files and programs deleted by the user."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-815
+
+- name: "MEDIUM | V-818 | AUDIT | The audit system must be configured to audit login, logout, and session initiation."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-818
+
+- name: "MEDIUM | V-818 | PATCH | The audit system must be configured to audit login, logout, and session initiation."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-818
+
+- name: "MEDIUM | V-819 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-819
+
+- name: "MEDIUM | V-819 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-819
+
+- name: "MEDIUM | V-821 | AUDIT | The inetd.conf file, xinetd.conf file, and the xinetd.d directory must be owned by root or bin."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-821
+
+- name: "MEDIUM | V-821 | PATCH | The inetd.conf file, xinetd.conf file, and the xinetd.d directory must be owned by root or bin."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-821
+
+- name: "MEDIUM | V-822 | AUDIT | The xinetd configuration files must have mode 0640 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-822
+
+- name: "MEDIUM | V-822 | PATCH | The xinetd configuration files must have mode 0640 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-822
+
+- name: "MEDIUM | V-823 | AUDIT | The services file must be owned by root or bin."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-823
+
+- name: "MEDIUM | V-823 | PATCH | The services file must be owned by root or bin."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-823
+
+- name: "MEDIUM | V-824 | AUDIT | The services file must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-824
+
+- name: "MEDIUM | V-824 | PATCH | The services file must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-824
+
+- name: "MEDIUM | V-828 | AUDIT | The hosts.lpd (or equivalent) file must be owned by root, bin, sys, or lp."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-828
+
+- name: "MEDIUM | V-828 | PATCH | The hosts.lpd (or equivalent) file must be owned by root, bin, sys, or lp."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-828
+
+- name: "MEDIUM | V-829 | AUDIT | The hosts.lpd (or equivalent) must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-829
+
+- name: "MEDIUM | V-829 | PATCH | The hosts.lpd (or equivalent) must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-829
+
+- name: "MEDIUM | V-831 | AUDIT | The alias file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-831
+
+- name: "MEDIUM | V-831 | PATCH | The alias file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-831
+
+- name: "MEDIUM | V-832 | AUDIT | The alias file must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-832
+
+- name: "MEDIUM | V-832 | PATCH | The alias file must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-832
+
+- name: "MEDIUM | V-834 | AUDIT | Files executed through a mail aliases file must have mode 0755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-834
+
+- name: "MEDIUM | V-834 | PATCH | Files executed through a mail aliases file must have mode 0755 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-834
+
+- name: "MEDIUM | V-837 | AUDIT | The SMTP service log file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-837
+
+- name: "MEDIUM | V-837 | PATCH | The SMTP service log file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-837
+
+- name: "MEDIUM | V-838 | AUDIT | The SMTP service log file must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-838
+
+- name: "MEDIUM | V-838 | PATCH | The SMTP service log file must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-838
+
+- name: "MEDIUM | V-840 | AUDIT | The ftpusers file must exist."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-840
+
+- name: "MEDIUM | V-840 | PATCH | The ftpusers file must exist."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-840
+
+- name: "MEDIUM | V-842 | AUDIT | The ftpusers file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-842
+
+- name: "MEDIUM | V-842 | PATCH | The ftpusers file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-842
+
+- name: "MEDIUM | V-843 | AUDIT | The ftpusers file must have mode 0640 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-843
+
+- name: "MEDIUM | V-843 | PATCH | The ftpusers file must have mode 0640 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-843
+
+- name: "MEDIUM | V-867 | AUDIT | The Network Information System (NIS) protocol must not be used."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-867
+
+- name: "MEDIUM | V-867 | PATCH | The Network Information System (NIS) protocol must not be used."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-867
+
+- name: "MEDIUM | V-901 | AUDIT | All user home directories must have mode 0750 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-901
+
+- name: "MEDIUM | V-901 | PATCH | All user home directories must have mode 0750 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-901
+
+- name: "MEDIUM | V-906 | AUDIT | All run control scripts must have mode 0755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-906
+
+- name: "MEDIUM | V-906 | PATCH | All run control scripts must have mode 0755 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-906
+
+- name: "MEDIUM | V-913 | AUDIT | There must be no .netrc files on the system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-913
+
+- name: "MEDIUM | V-913 | PATCH | There must be no .netrc files on the system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-913
+
+- name: "MEDIUM | V-916 | AUDIT | The /etc/shells (or equivalent) file must exist."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-916
+
+- name: "MEDIUM | V-916 | PATCH | The /etc/shells (or equivalent) file must exist."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-916
+
+- name: "MEDIUM | V-921 | AUDIT | All shell files must be owned by root or bin."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-921
+
+- name: "MEDIUM | V-921 | PATCH | All shell files must be owned by root or bin."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-921
+
+- name: "MEDIUM | V-924 | AUDIT | Device files and directories must only be writable by users with a system account or as configured by the vendor."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-924
+
+- name: "MEDIUM | V-924 | PATCH | Device files and directories must only be writable by users with a system account or as configured by the vendor."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-924
+
+- name: "MEDIUM | V-928 | AUDIT | The Network File System (NFS) export configuration file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-928
+
+- name: "MEDIUM | V-928 | PATCH | The Network File System (NFS) export configuration file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-928
+
+- name: "MEDIUM | V-931 | AUDIT | All Network File System (NFS) exported system files and system directories must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-931
+
+- name: "MEDIUM | V-931 | PATCH | All Network File System (NFS) exported system files and system directories must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-931
+
+- name: "MEDIUM | V-932 | AUDIT | The Network File System (NFS) anonymous UID and GID must be configured to values without permissions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-932
+
+- name: "MEDIUM | V-932 | PATCH | The Network File System (NFS) anonymous UID and GID must be configured to values without permissions."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-932
+
+- name: "MEDIUM | V-933 | AUDIT | The Network File System (NFS) server must be configured to restrict file system access to local hosts."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-933
+
+- name: "MEDIUM | V-933 | PATCH | The Network File System (NFS) server must be configured to restrict file system access to local hosts."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-933
+
+- name: "MEDIUM | V-935 | AUDIT | The Network File System (NFS) server must not allow remote root access."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-935
+
+- name: "MEDIUM | V-935 | PATCH | The Network File System (NFS) server must not allow remote root access."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-935
+
+- name: "MEDIUM | V-936 | AUDIT | The 'nosuid' option must be enabled on all Network File System (NFS) client mounts."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-936
+
+- name: "MEDIUM | V-936 | PATCH | The 'nosuid' option must be enabled on all Network File System (NFS) client mounts."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-936
+
+- name: "MEDIUM | V-940 | AUDIT | The system must use an access control program."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-940
+
+- name: "MEDIUM | V-940 | PATCH | The system must use an access control program."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-940
+
+- name: "MEDIUM | V-941 | AUDIT | The system's access control program must log each system access attempt."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-941
+
+- name: "MEDIUM | V-941 | PATCH | The system's access control program must log each system access attempt."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-941
+
+- name: "MEDIUM | V-974 | AUDIT | Access to the cron utility must be controlled using the cron.allow and/or cron.deny file(s)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-974
+
+- name: "MEDIUM | V-974 | PATCH | Access to the cron utility must be controlled using the cron.allow and/or cron.deny file(s)."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-974
+
+- name: "MEDIUM | V-975 | AUDIT | The cron.allow file must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-975
+
+- name: "MEDIUM | V-975 | PATCH | The cron.allow file must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-975
+
+- name: "MEDIUM | V-978 | AUDIT | Crontab files must have mode 0600 or less permissive, and files in cron script directories must have mode 0700 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-978
+
+- name: "MEDIUM | V-978 | PATCH | Crontab files must have mode 0600 or less permissive, and files in cron script directories must have mode 0700 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-978
+
+- name: "MEDIUM | V-979 | AUDIT | Cron and crontab directories must have mode 0755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-979
+
+- name: "MEDIUM | V-979 | PATCH | Cron and crontab directories must have mode 0755 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-979
+
+- name: "MEDIUM | V-980 | AUDIT | Cron and crontab directories must be owned by root or bin."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-980
+
+- name: "MEDIUM | V-980 | PATCH | Cron and crontab directories must be owned by root or bin."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-980
+
+- name: "MEDIUM | V-981 | AUDIT | Cron and crontab directories must be group-owned by root, sys, bin or cron."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-981
+
+- name: "MEDIUM | V-981 | PATCH | Cron and crontab directories must be group-owned by root, sys, bin or cron."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-981
+
+- name: "MEDIUM | V-982 | AUDIT | Cron logging must be implemented."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-982
+
+- name: "MEDIUM | V-982 | PATCH | Cron logging must be implemented."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-982
+
+- name: "MEDIUM | V-983 | AUDIT | The cronlog file must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-983
+
+- name: "MEDIUM | V-983 | PATCH | The cronlog file must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-983
+
+- name: "MEDIUM | V-984 | AUDIT | Access to the 'at' utility must be controlled via the at.allow and/or at.deny file(s)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-984
+
+- name: "MEDIUM | V-984 | PATCH | Access to the 'at' utility must be controlled via the at.allow and/or at.deny file(s)."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-984
+
+- name: "MEDIUM | V-985 | AUDIT | The at.deny file must not be empty if it exists."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-985
+
+- name: "MEDIUM | V-985 | PATCH | The at.deny file must not be empty if it exists."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-985
+
+- name: "MEDIUM | V-986 | AUDIT | Default system accounts (with the exception of root) must not be listed in the at.allow file or must be included in the at.deny file if the at.allow file does not exist."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-986
+
+- name: "MEDIUM | V-986 | PATCH | Default system accounts (with the exception of root) must not be listed in the at.allow file or must be included in the at.deny file if the at.allow file does not exist."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-986
+
+- name: "MEDIUM | V-987 | AUDIT | The at.allow file must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-987
+
+- name: "MEDIUM | V-987 | PATCH | The at.allow file must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-987
+
+- name: "MEDIUM | V-994 | AUDIT | The snmpd.conf file must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-994
+
+- name: "MEDIUM | V-994 | PATCH | The snmpd.conf file must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-994
+
+- name: "MEDIUM | V-995 | AUDIT | Management Information Base (MIB) files must have mode 0640 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-995
+
+- name: "MEDIUM | V-995 | PATCH | Management Information Base (MIB) files must have mode 0640 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-995
+
+- name: "MEDIUM | V-1021 | AUDIT | The X server must have the correct options enabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1021
+
+- name: "MEDIUM | V-1021 | PATCH | The X server must have the correct options enabled."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1021
+
+- name: "MEDIUM | V-1022 | AUDIT | An X server must have none of the following options enabled: -ac, -core (except for debugging purposes), or -nolock."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1022
+
+- name: "MEDIUM | V-1022 | PATCH | An X server must have none of the following options enabled: -ac, -core (except for debugging purposes), or -nolock."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1022
+
+- name: "MEDIUM | V-1023 | AUDIT | The system must not run an Internet Network News (INN) server."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1023
+
+- name: "MEDIUM | V-1023 | PATCH | The system must not run an Internet Network News (INN) server."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1023
+
+- name: "MEDIUM | V-1025 | AUDIT | The /etc/access.conf file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1025
+
+- name: "MEDIUM | V-1025 | PATCH | The /etc/access.conf file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1025
+
+- name: "MEDIUM | V-1027 | AUDIT | The /etc/smb.conf file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1027
+
+- name: "MEDIUM | V-1027 | PATCH | The /etc/smb.conf file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1027
+
+- name: "MEDIUM | V-1028 | AUDIT | The /etc/smb.conf file must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1028
+
+- name: "MEDIUM | V-1028 | PATCH | The /etc/smb.conf file must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1028
+
+- name: "MEDIUM | V-1029 | AUDIT | The /etc/smbpasswd file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1029
+
+- name: "MEDIUM | V-1029 | PATCH | The /etc/smbpasswd file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1029
+
+- name: "MEDIUM | V-1032 | AUDIT | Users must not be able to change passwords more than once every 24 hours."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1032
+
+- name: "MEDIUM | V-1032 | PATCH | Users must not be able to change passwords more than once every 24 hours."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1032
+
+- name: "MEDIUM | V-1047 | AUDIT | The system must not permit root logins using remote access programs such as ssh."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1047
+
+- name: "MEDIUM | V-1047 | PATCH | The system must not permit root logins using remote access programs such as ssh."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1047
+
+- name: "MEDIUM | V-1048 | AUDIT | Audio devices must have mode 0660 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1048
+
+- name: "MEDIUM | V-1048 | PATCH | Audio devices must have mode 0660 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1048
+
+- name: "MEDIUM | V-1049 | AUDIT | Audio devices must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1049
+
+- name: "MEDIUM | V-1049 | PATCH | Audio devices must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1049
+
+- name: "MEDIUM | V-1054 | AUDIT | The /etc/access.conf file must have a privileged group owner."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1054
+
+- name: "MEDIUM | V-1054 | PATCH | The /etc/access.conf file must have a privileged group owner."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1054
+
+- name: "MEDIUM | V-1055 | AUDIT | The /etc/security/access.conf file must have mode 0640 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1055
+
+- name: "MEDIUM | V-1055 | PATCH | The /etc/security/access.conf file must have mode 0640 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1055
+
+- name: "MEDIUM | V-1056 | AUDIT | The /etc/smb.conf file must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1056
+
+- name: "MEDIUM | V-1056 | PATCH | The /etc/smb.conf file must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1056
+
+- name: "MEDIUM | V-1058 | AUDIT | The smbpasswd file must be group-owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1058
+
+- name: "MEDIUM | V-1058 | PATCH | The smbpasswd file must be group-owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1058
+
+- name: "MEDIUM | V-1059 | AUDIT | The smbpasswd file must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1059
+
+- name: "MEDIUM | V-1059 | PATCH | The smbpasswd file must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1059
+
+- name: "MEDIUM | V-1061 | AUDIT | Audio devices must be group-owned by root, sys, bin, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-1061
+
+- name: "MEDIUM | V-1061 | PATCH | Audio devices must be group-owned by root, sys, bin, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-1061
+
+- name: "MEDIUM | V-4083 | AUDIT | Graphical desktop environments provided by the system must automatically lock after 15 minutes of inactivity and the system must require users to re-authenticate to unlock the environment.
+
+Applications requiring continuous, real-time screen display (i.e., network management products) require the following and need to be documented with the IAO.
+
+-The logon session does not have administrator rights.
+-The display station (i.e., keyboard, monitor, etc.) is located in a controlled access area."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4083
+
+- name: "MEDIUM | V-4083 | PATCH | Graphical desktop environments provided by the system must automatically lock after 15 minutes of inactivity and the system must require users to re-authenticate to unlock the environment.
+
+Applications requiring continuous, real-time screen display (i.e., network management products) require the following and need to be documented with the IAO.
+
+-The logon session does not have administrator rights.
+-The display station (i.e., keyboard, monitor, etc.) is located in a controlled access area."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4083
+
+- name: "MEDIUM | V-4084 | AUDIT | The system must prohibit the reuse of passwords within five iterations."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4084
+
+- name: "MEDIUM | V-4084 | PATCH | The system must prohibit the reuse of passwords within five iterations."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4084
+
+- name: "MEDIUM | V-4089 | AUDIT | All system start-up files must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4089
+
+- name: "MEDIUM | V-4089 | PATCH | All system start-up files must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4089
+
+- name: "MEDIUM | V-4090 | AUDIT | All system start-up files must be group-owned by root, sys, bin, other, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4090
+
+- name: "MEDIUM | V-4090 | PATCH | All system start-up files must be group-owned by root, sys, bin, other, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4090
+
+- name: "MEDIUM | V-4250 | AUDIT | The system's boot loader configuration file(s) must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4250
+
+- name: "MEDIUM | V-4250 | PATCH | The system's boot loader configuration file(s) must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4250
+
+- name: "MEDIUM | V-4275 | AUDIT | The /etc/news/readers.conf (or equivalent) must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4275
+
+- name: "MEDIUM | V-4275 | PATCH | The /etc/news/readers.conf (or equivalent) must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4275
+
+- name: "MEDIUM | V-4276 | AUDIT | The /etc/news/passwd.nntp file (or equivalent) must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4276
+
+- name: "MEDIUM | V-4276 | PATCH | The /etc/news/passwd.nntp file (or equivalent) must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4276
+
+- name: "MEDIUM | V-4278 | AUDIT | The files in /etc/news must be group-owned by root or news."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4278
+
+- name: "MEDIUM | V-4278 | PATCH | The files in /etc/news must be group-owned by root or news."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4278
+
+- name: "MEDIUM | V-4321 | AUDIT | The system must not run Samba unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4321
+
+- name: "MEDIUM | V-4321 | PATCH | The system must not run Samba unless needed."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4321
+
+- name: "MEDIUM | V-4334 | AUDIT | The /etc/sysctl.conf file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4334
+
+- name: "MEDIUM | V-4334 | PATCH | The /etc/sysctl.conf file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4334
+
+- name: "MEDIUM | V-4335 | AUDIT | The /etc/sysctl.conf file must be group-owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4335
+
+- name: "MEDIUM | V-4335 | PATCH | The /etc/sysctl.conf file must be group-owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4335
+
+- name: "MEDIUM | V-4336 | AUDIT | The /etc/sysctl.conf file must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4336
+
+- name: "MEDIUM | V-4336 | PATCH | The /etc/sysctl.conf file must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4336
+
+- name: "MEDIUM | V-4358 | AUDIT | The cron.deny file must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4358
+
+- name: "MEDIUM | V-4358 | PATCH | The cron.deny file must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4358
+
+- name: "MEDIUM | V-4361 | AUDIT | The cron.allow file must be owned by root, bin, or sys."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4361
+
+- name: "MEDIUM | V-4361 | PATCH | The cron.allow file must be owned by root, bin, or sys."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4361
+
+- name: "MEDIUM | V-4364 | AUDIT | The 'at' directory must have mode 0755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4364
+
+- name: "MEDIUM | V-4364 | PATCH | The 'at' directory must have mode 0755 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4364
+
+- name: "MEDIUM | V-4367 | AUDIT | The at.allow file must be owned by root, bin, or sys."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4367
+
+- name: "MEDIUM | V-4367 | PATCH | The at.allow file must be owned by root, bin, or sys."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4367
+
+- name: "MEDIUM | V-4368 | AUDIT | The at.deny file must be owned by root, bin, or sys."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4368
+
+- name: "MEDIUM | V-4368 | PATCH | The at.deny file must be owned by root, bin, or sys."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4368
+
+- name: "MEDIUM | V-4369 | AUDIT | The traceroute command owner must be root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4369
+
+- name: "MEDIUM | V-4369 | PATCH | The traceroute command owner must be root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4369
+
+- name: "MEDIUM | V-4370 | AUDIT | The traceroute command must be group-owned by sys, bin, root, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4370
+
+- name: "MEDIUM | V-4370 | PATCH | The traceroute command must be group-owned by sys, bin, root, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4370
+
+- name: "MEDIUM | V-4371 | AUDIT | The traceroute file must have mode 0700 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4371
+
+- name: "MEDIUM | V-4371 | PATCH | The traceroute file must have mode 0700 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4371
+
+- name: "MEDIUM | V-4385 | AUDIT | The system must not use .forward files."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4385
+
+- name: "MEDIUM | V-4385 | PATCH | The system must not use .forward files."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4385
+
+- name: "MEDIUM | V-4393 | AUDIT | The /etc/syslog.conf file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4393
+
+- name: "MEDIUM | V-4393 | PATCH | The /etc/syslog.conf file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4393
+
+- name: "MEDIUM | V-4394 | AUDIT | The /etc/syslog.conf file must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4394
+
+- name: "MEDIUM | V-4394 | PATCH | The /etc/syslog.conf file must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4394
+
+- name: "MEDIUM | V-4428 | AUDIT | All .rhosts, .shosts, .netrc, or hosts.equiv files must be accessible by only root or the owner."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4428
+
+- name: "MEDIUM | V-4428 | PATCH | All .rhosts, .shosts, .netrc, or hosts.equiv files must be accessible by only root or the owner."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4428
+
+- name: "MEDIUM | V-4430 | AUDIT | The cron.deny file must be owned by root, bin, or sys."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4430
+
+- name: "MEDIUM | V-4430 | PATCH | The cron.deny file must be owned by root, bin, or sys."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4430
+
+- name: "MEDIUM | V-4696 | AUDIT | The system must not have the UUCP service active."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-4696
+
+- name: "MEDIUM | V-4696 | PATCH | The system must not have the UUCP service active."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-4696
+
+- name: "MEDIUM | V-11947 | AUDIT | The system must require passwords contain a minimum of 15 characters."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11947
+
+- name: "MEDIUM | V-11947 | PATCH | The system must require passwords contain a minimum of 15 characters."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11947
+
+- name: "MEDIUM | V-11948 | AUDIT | The system must require passwords contain at least one uppercase alphabetic character."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11948
+
+- name: "MEDIUM | V-11948 | PATCH | The system must require passwords contain at least one uppercase alphabetic character."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11948
+
+- name: "MEDIUM | V-11972 | AUDIT | The system must require passwords contain at least one numeric character."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11972
+
+- name: "MEDIUM | V-11972 | PATCH | The system must require passwords contain at least one numeric character."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11972
+
+- name: "MEDIUM | V-11973 | AUDIT | The system must require passwords contain at least one special character."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11973
+
+- name: "MEDIUM | V-11973 | PATCH | The system must require passwords contain at least one special character."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11973
+
+- name: "MEDIUM | V-11975 | AUDIT | The system must require passwords contain no more than three consecutive repeating characters."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11975
+
+- name: "MEDIUM | V-11975 | PATCH | The system must require passwords contain no more than three consecutive repeating characters."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11975
+
+- name: "MEDIUM | V-11976 | AUDIT | User passwords must be changed at least every 60 days."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11976
+
+- name: "MEDIUM | V-11976 | PATCH | User passwords must be changed at least every 60 days."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11976
+
+- name: "MEDIUM | V-11981 | AUDIT | All global initialization files must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11981
+
+- name: "MEDIUM | V-11981 | PATCH | All global initialization files must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11981
+
+- name: "MEDIUM | V-11982 | AUDIT | All global initialization files must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11982
+
+- name: "MEDIUM | V-11982 | PATCH | All global initialization files must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11982
+
+- name: "MEDIUM | V-11983 | AUDIT | All global initialization files must be group-owned by root, sys, bin, other, system, or the system default."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11983
+
+- name: "MEDIUM | V-11983 | PATCH | All global initialization files must be group-owned by root, sys, bin, other, system, or the system default."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11983
+
+- name: "MEDIUM | V-11984 | AUDIT | All skeleton files and directories (typically in /etc/skel) must be owned by root or bin."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11984
+
+- name: "MEDIUM | V-11984 | PATCH | All skeleton files and directories (typically in /etc/skel) must be owned by root or bin."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11984
+
+- name: "MEDIUM | V-11985 | AUDIT | All global initialization files' executable search paths must contain only absolute paths."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11985
+
+- name: "MEDIUM | V-11985 | PATCH | All global initialization files' executable search paths must contain only absolute paths."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11985
+
+- name: "MEDIUM | V-11986 | AUDIT | All local initialization files' executable search paths must contain only absolute paths."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11986
+
+- name: "MEDIUM | V-11986 | PATCH | All local initialization files' executable search paths must contain only absolute paths."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11986
+
+- name: "MEDIUM | V-11989 | AUDIT | The .rhosts file must not be supported in PAM."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11989
+
+- name: "MEDIUM | V-11989 | PATCH | The .rhosts file must not be supported in PAM."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11989
+
+- name: "MEDIUM | V-11995 | AUDIT | Default system accounts (with the exception of root) must not be listed in the cron.allow file or must be included in the cron.deny file, if cron.allow does not exist."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11995
+
+- name: "MEDIUM | V-11995 | PATCH | Default system accounts (with the exception of root) must not be listed in the cron.allow file or must be included in the cron.deny file, if cron.allow does not exist."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11995
+
+- name: "MEDIUM | V-11999 | AUDIT | The system must implement non-executable program stacks."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-11999
+
+- name: "MEDIUM | V-11999 | PATCH | The system must implement non-executable program stacks."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-11999
+
+- name: "MEDIUM | V-12002 | AUDIT | The system must not forward IPv4 source-routed packets."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-12002
+
+- name: "MEDIUM | V-12002 | PATCH | The system must not forward IPv4 source-routed packets."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-12002
+
+- name: "MEDIUM | V-12004 | AUDIT | The system must log informational authentication data."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-12004
+
+- name: "MEDIUM | V-12004 | PATCH | The system must log informational authentication data."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-12004
+
+- name: "MEDIUM | V-12005 | AUDIT | Inetd and xinetd must be disabled or removed if no network services utilizing them are enabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-12005
+
+- name: "MEDIUM | V-12005 | PATCH | Inetd and xinetd must be disabled or removed if no network services utilizing them are enabled."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-12005
+
+- name: "MEDIUM | V-12006 | AUDIT | The SMTP service HELP command must not be enabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-12006
+
+- name: "MEDIUM | V-12006 | PATCH | The SMTP service HELP command must not be enabled."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-12006
+
+- name: "MEDIUM | V-12011 | AUDIT | All FTP users must have a default umask of 077."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-12011
+
+- name: "MEDIUM | V-12011 | PATCH | All FTP users must have a default umask of 077."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-12011
+
+- name: "MEDIUM | V-12019 | AUDIT | The snmpd.conf file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-12019
+
+- name: "MEDIUM | V-12019 | PATCH | The snmpd.conf file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-12019
+
+- name: "MEDIUM | V-12023 | AUDIT | IP forwarding for IPv4 must not be enabled, unless the system is a router."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-12023
+
+- name: "MEDIUM | V-12023 | PATCH | IP forwarding for IPv4 must not be enabled, unless the system is a router."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-12023
+
+- name: "MEDIUM | V-12030 | AUDIT | The system's access control program must be configured to grant or deny system access to specific hosts."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-12030
+
+- name: "MEDIUM | V-12030 | PATCH | The system's access control program must be configured to grant or deny system access to specific hosts."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-12030
+
+- name: "MEDIUM | V-12039 | AUDIT | The /etc/securetty file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-12039
+
+- name: "MEDIUM | V-12039 | PATCH | The /etc/securetty file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-12039
+
+- name: "MEDIUM | V-12040 | AUDIT | The /etc/securetty file must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-12040
+
+- name: "MEDIUM | V-12040 | PATCH | The /etc/securetty file must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-12040
+
+- name: "MEDIUM | V-22290 | AUDIT | The system clock must be synchronized continuously, or at least daily."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22290
+
+- name: "MEDIUM | V-22290 | PATCH | The system clock must be synchronized continuously, or at least daily."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22290
+
+- name: "MEDIUM | V-22294 | AUDIT | The time synchronization configuration file (such as /etc/ntp.conf) must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22294
+
+- name: "MEDIUM | V-22294 | PATCH | The time synchronization configuration file (such as /etc/ntp.conf) must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22294
+
+- name: "MEDIUM | V-22296 | AUDIT | The time synchronization configuration file (such as /etc/ntp.conf) must have mode 0640 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22296
+
+- name: "MEDIUM | V-22296 | PATCH | The time synchronization configuration file (such as /etc/ntp.conf) must have mode 0640 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22296
+
+- name: "MEDIUM | V-22302 | AUDIT | The system must enforce compliance of the entire password during authentification."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22302
+
+- name: "MEDIUM | V-22302 | PATCH | The system must enforce compliance of the entire password during authentification."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22302
+
+- name: "MEDIUM | V-22303 | AUDIT | The system must use a FIPS 140-2 approved cryptographic hashing algorithm for generating account password hashes."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22303
+
+- name: "MEDIUM | V-22303 | PATCH | The system must use a FIPS 140-2 approved cryptographic hashing algorithm for generating account password hashes."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22303
+
+- name: "MEDIUM | V-22304 | AUDIT | The password hashes stored on the system must have been generated using a FIPS 140-2 approved cryptographic hashing algorithm."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22304
+
+- name: "MEDIUM | V-22304 | PATCH | The password hashes stored on the system must have been generated using a FIPS 140-2 approved cryptographic hashing algorithm."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22304
+
+- name: "MEDIUM | V-22305 | AUDIT | The system must require passwords contain at least one lowercase alphabetic character."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22305
+
+- name: "MEDIUM | V-22305 | PATCH | The system must require passwords contain at least one lowercase alphabetic character."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22305
+
+- name: "MEDIUM | V-22306 | AUDIT | The system must require at least eight characters be changed between the old and new passwords during a password change."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22306
+
+- name: "MEDIUM | V-22306 | PATCH | The system must require at least eight characters be changed between the old and new passwords during a password change."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22306
+
+- name: "MEDIUM | V-22307 | AUDIT | The system must prevent the use of dictionary words for passwords."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22307
+
+- name: "MEDIUM | V-22307 | PATCH | The system must prevent the use of dictionary words for passwords."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22307
+
+- name: "MEDIUM | V-22310 | AUDIT | The root account's library search path must be the system default and must contain only absolute paths."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22310
+
+- name: "MEDIUM | V-22310 | PATCH | The root account's library search path must be the system default and must contain only absolute paths."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22310
+
+- name: "MEDIUM | V-22311 | AUDIT | The root account's list of preloaded libraries must be empty."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22311
+
+- name: "MEDIUM | V-22311 | PATCH | The root account's list of preloaded libraries must be empty."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22311
+
+- name: "MEDIUM | V-22319 | AUDIT | The /etc/resolv.conf file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22319
+
+- name: "MEDIUM | V-22319 | PATCH | The /etc/resolv.conf file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22319
+
+- name: "MEDIUM | V-22321 | AUDIT | The /etc/resolv.conf file must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22321
+
+- name: "MEDIUM | V-22321 | PATCH | The /etc/resolv.conf file must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22321
+
+- name: "MEDIUM | V-22323 | AUDIT | The /etc/hosts file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22323
+
+- name: "MEDIUM | V-22323 | PATCH | The /etc/hosts file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22323
+
+- name: "MEDIUM | V-22325 | AUDIT | The /etc/hosts file must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22325
+
+- name: "MEDIUM | V-22325 | PATCH | The /etc/hosts file must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22325
+
+- name: "MEDIUM | V-22327 | AUDIT | The /etc/nsswitch.conf file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22327
+
+- name: "MEDIUM | V-22327 | PATCH | The /etc/nsswitch.conf file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22327
+
+- name: "MEDIUM | V-22328 | AUDIT | The /etc/nsswitch.conf file must be group-owned by root, bin, or sys."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22328
+
+- name: "MEDIUM | V-22328 | PATCH | The /etc/nsswitch.conf file must be group-owned by root, bin, or sys."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22328
+
+- name: "MEDIUM | V-22329 | AUDIT | The /etc/nsswitch.conf file must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22329
+
+- name: "MEDIUM | V-22329 | PATCH | The /etc/nsswitch.conf file must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22329
+
+- name: "MEDIUM | V-22332 | AUDIT | The /etc/passwd file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22332
+
+- name: "MEDIUM | V-22332 | PATCH | The /etc/passwd file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22332
+
+- name: "MEDIUM | V-22333 | AUDIT | The /etc/passwd file must be group-owned by root, bin, or sys."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22333
+
+- name: "MEDIUM | V-22333 | PATCH | The /etc/passwd file must be group-owned by root, bin, or sys."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22333
+
+- name: "MEDIUM | V-22335 | AUDIT | The /etc/group file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22335
+
+- name: "MEDIUM | V-22335 | PATCH | The /etc/group file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22335
+
+- name: "MEDIUM | V-22336 | AUDIT | The /etc/group file must be group-owned by root, bin, or sys."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22336
+
+- name: "MEDIUM | V-22336 | PATCH | The /etc/group file must be group-owned by root, bin, or sys."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22336
+
+- name: "MEDIUM | V-22337 | AUDIT | The /etc/group file must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22337
+
+- name: "MEDIUM | V-22337 | PATCH | The /etc/group file must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22337
+
+- name: "MEDIUM | V-22339 | AUDIT | The /etc/shadow file (or equivalent) must be group-owned by root, bin, or sys."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22339
+
+- name: "MEDIUM | V-22339 | PATCH | The /etc/shadow file (or equivalent) must be group-owned by root, bin, or sys."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22339
+
+- name: "MEDIUM | V-22341 | AUDIT | The /etc/gshadow file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22341
+
+- name: "MEDIUM | V-22341 | PATCH | The /etc/gshadow file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22341
+
+- name: "MEDIUM | V-22342 | AUDIT | The /etc/gshadow file must be group-owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22342
+
+- name: "MEDIUM | V-22342 | PATCH | The /etc/gshadow file must be group-owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22342
+
+- name: "MEDIUM | V-22343 | AUDIT | The /etc/gshadow file must have mode 0400."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22343
+
+- name: "MEDIUM | V-22343 | PATCH | The /etc/gshadow file must have mode 0400."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22343
+
+- name: "MEDIUM | V-22347 | AUDIT | The /etc/passwd file must not contain password hashes."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22347
+
+- name: "MEDIUM | V-22347 | PATCH | The /etc/passwd file must not contain password hashes."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22347
+
+- name: "MEDIUM | V-22348 | AUDIT | The /etc/group file must not contain any group password hashes."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22348
+
+- name: "MEDIUM | V-22348 | PATCH | The /etc/group file must not contain any group password hashes."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22348
+
+- name: "MEDIUM | V-22349 | AUDIT | The /etc/gshadow file must not contain any group password hashes."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22349
+
+- name: "MEDIUM | V-22349 | PATCH | The /etc/gshadow file must not contain any group password hashes."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22349
+
+- name: "MEDIUM | V-22355 | AUDIT | Run control scripts' lists of preloaded libraries must contain only absolute paths."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22355
+
+- name: "MEDIUM | V-22355 | PATCH | Run control scripts' lists of preloaded libraries must contain only absolute paths."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22355
+
+- name: "MEDIUM | V-22358 | AUDIT | All skeleton files (typically in /etc/skel) must be group-owned by root, bin, sys, system, or other."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22358
+
+- name: "MEDIUM | V-22358 | PATCH | All skeleton files (typically in /etc/skel) must be group-owned by root, bin, sys, system, or other."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22358
+
+- name: "MEDIUM | V-22365 | AUDIT | All shell files must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22365
+
+- name: "MEDIUM | V-22365 | PATCH | All shell files must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22365
+
+- name: "MEDIUM | V-22375 | AUDIT | The audit system must alert the SA when the audit storage volume approaches its capacity."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22375
+
+- name: "MEDIUM | V-22375 | PATCH | The audit system must alert the SA when the audit storage volume approaches its capacity."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22375
+
+- name: "MEDIUM | V-22383 | AUDIT | The audit system must be configured to audit the loading and unloading of dynamic kernel modules."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22383
+
+- name: "MEDIUM | V-22383 | PATCH | The audit system must be configured to audit the loading and unloading of dynamic kernel modules."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22383
+
+- name: "MEDIUM | V-22385 | AUDIT | Crontab files must be group-owned by root, cron, or the crontab creator's primary group."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22385
+
+- name: "MEDIUM | V-22385 | PATCH | Crontab files must be group-owned by root, cron, or the crontab creator's primary group."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22385
+
+- name: "MEDIUM | V-22391 | AUDIT | The cron.allow file must be group-owned by root, bin, sys, or cron."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22391
+
+- name: "MEDIUM | V-22391 | PATCH | The cron.allow file must be group-owned by root, bin, sys, or cron."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22391
+
+- name: "MEDIUM | V-22392 | AUDIT | The at.deny file must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22392
+
+- name: "MEDIUM | V-22392 | PATCH | The at.deny file must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22392
+
+- name: "MEDIUM | V-22394 | AUDIT | The cron.deny file must be group-owned by root, bin, or sys."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22394
+
+- name: "MEDIUM | V-22394 | PATCH | The cron.deny file must be group-owned by root, bin, or sys."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22394
+
+- name: "MEDIUM | V-22396 | AUDIT | The 'at' directory must be group-owned by root, bin, sys, or cron."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22396
+
+- name: "MEDIUM | V-22396 | PATCH | The 'at' directory must be group-owned by root, bin, sys, or cron."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22396
+
+- name: "MEDIUM | V-22397 | AUDIT | The at.allow file must be group-owned by root, bin, sys, or cron."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22397
+
+- name: "MEDIUM | V-22397 | PATCH | The at.allow file must be group-owned by root, bin, sys, or cron."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22397
+
+- name: "MEDIUM | V-22398 | AUDIT | The at.deny file must be group-owned by root, bin, sys, or cron."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22398
+
+- name: "MEDIUM | V-22398 | PATCH | The at.deny file must be group-owned by root, bin, sys, or cron."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22398
+
+- name: "MEDIUM | V-22404 | AUDIT | Kernel core dumps must be disabled unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22404
+
+- name: "MEDIUM | V-22404 | PATCH | Kernel core dumps must be disabled unless needed."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22404
+
+- name: "MEDIUM | V-22408 | AUDIT | Network interfaces must not be configured to allow user control."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22408
+
+- name: "MEDIUM | V-22408 | PATCH | Network interfaces must not be configured to allow user control."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22408
+
+- name: "MEDIUM | V-22410 | AUDIT | The system must not respond to Internet Control Message Protocol v4 (ICMPv4) echoes sent to a broadcast address."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22410
+
+- name: "MEDIUM | V-22410 | PATCH | The system must not respond to Internet Control Message Protocol v4 (ICMPv4) echoes sent to a broadcast address."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22410
+
+- name: "MEDIUM | V-22411 | AUDIT | The system must not respond to Internet Control Message Protocol (ICMP) timestamp requests sent to a broadcast address."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22411
+
+- name: "MEDIUM | V-22411 | PATCH | The system must not respond to Internet Control Message Protocol (ICMP) timestamp requests sent to a broadcast address."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22411
+
+- name: "MEDIUM | V-22414 | AUDIT | The system must not accept source-routed IPv4 packets."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22414
+
+- name: "MEDIUM | V-22414 | PATCH | The system must not accept source-routed IPv4 packets."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22414
+
+- name: "MEDIUM | V-22415 | AUDIT | Proxy Address Resolution Protocol (Proxy ARP) must not be enabled on the system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22415
+
+- name: "MEDIUM | V-22415 | PATCH | Proxy Address Resolution Protocol (Proxy ARP) must not be enabled on the system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22415
+
+- name: "MEDIUM | V-22416 | AUDIT | The system must ignore IPv4 Internet Control Message Protocol (ICMP) redirect messages."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22416
+
+- name: "MEDIUM | V-22416 | PATCH | The system must ignore IPv4 Internet Control Message Protocol (ICMP) redirect messages."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22416
+
+- name: "MEDIUM | V-22417 | AUDIT | The system must not send IPv4 Internet Control Message Protocol (ICMP) redirects."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22417
+
+- name: "MEDIUM | V-22417 | PATCH | The system must not send IPv4 Internet Control Message Protocol (ICMP) redirects."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22417
+
+- name: "MEDIUM | V-22419 | AUDIT | The system must be configured to use TCP syncookies when experiencing a TCP SYN flood."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22419
+
+- name: "MEDIUM | V-22419 | PATCH | The system must be configured to use TCP syncookies when experiencing a TCP SYN flood."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22419
+
+- name: "MEDIUM | V-22421 | AUDIT | The system must not be configured for network bridging."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22421
+
+- name: "MEDIUM | V-22421 | PATCH | The system must not be configured for network bridging."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22421
+
+- name: "MEDIUM | V-22423 | AUDIT | The inetd.conf file, xinetd.conf file, and the xinetd.d directory must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22423
+
+- name: "MEDIUM | V-22423 | PATCH | The inetd.conf file, xinetd.conf file, and the xinetd.d directory must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22423
+
+- name: "MEDIUM | V-22425 | AUDIT | The xinetd.d directory must have mode 0755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22425
+
+- name: "MEDIUM | V-22425 | PATCH | The xinetd.d directory must have mode 0755 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22425
+
+- name: "MEDIUM | V-22427 | AUDIT | The services file must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22427
+
+- name: "MEDIUM | V-22427 | PATCH | The services file must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22427
+
+- name: "MEDIUM | V-22429 | AUDIT | The portmap or rpcbind service must not be running unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22429
+
+- name: "MEDIUM | V-22429 | PATCH | The portmap or rpcbind service must not be running unless needed."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22429
+
+- name: "MEDIUM | V-22430 | AUDIT | The portmap or rpcbind service must not be installed unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22430
+
+- name: "MEDIUM | V-22430 | PATCH | The portmap or rpcbind service must not be installed unless needed."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22430
+
+- name: "MEDIUM | V-22431 | AUDIT | The rshd service must not be installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22431
+
+- name: "MEDIUM | V-22431 | PATCH | The rshd service must not be installed."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22431
+
+- name: "MEDIUM | V-22432 | AUDIT | The rlogind service must not be running."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22432
+
+- name: "MEDIUM | V-22432 | PATCH | The rlogind service must not be running."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22432
+
+- name: "MEDIUM | V-22433 | AUDIT | The rlogind service must not be installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22433
+
+- name: "MEDIUM | V-22433 | PATCH | The rlogind service must not be installed."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22433
+
+- name: "MEDIUM | V-22434 | AUDIT | The rexecd service must not be installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22434
+
+- name: "MEDIUM | V-22434 | PATCH | The rexecd service must not be installed."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22434
+
+- name: "MEDIUM | V-22435 | AUDIT | The hosts.lpd (or equivalent) file must be group-owned by lp."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22435
+
+- name: "MEDIUM | V-22435 | PATCH | The hosts.lpd (or equivalent) file must be group-owned by lp."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22435
+
+- name: "MEDIUM | V-22438 | AUDIT | The aliases file must be group-owned by root, sys, bin, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22438
+
+- name: "MEDIUM | V-22438 | PATCH | The aliases file must be group-owned by root, sys, bin, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22438
+
+- name: "MEDIUM | V-22444 | AUDIT | The ftpusers file must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22444
+
+- name: "MEDIUM | V-22444 | PATCH | The ftpusers file must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22444
+
+- name: "MEDIUM | V-22447 | AUDIT | The SNMP service must use only SNMPv3 or its successors."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22447
+
+- name: "MEDIUM | V-22447 | PATCH | The SNMP service must use only SNMPv3 or its successors."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22447
+
+- name: "MEDIUM | V-22451 | AUDIT | The snmpd.conf file must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22451
+
+- name: "MEDIUM | V-22451 | PATCH | The snmpd.conf file must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22451
+
+- name: "MEDIUM | V-22453 | AUDIT | The /etc/syslog.conf file must have mode 0640 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22453
+
+- name: "MEDIUM | V-22453 | PATCH | The /etc/syslog.conf file must have mode 0640 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22453
+
+- name: "MEDIUM | V-22455 | AUDIT | The system must use a remote syslog server (loghost)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22455
+
+- name: "MEDIUM | V-22455 | PATCH | The system must use a remote syslog server (loghost)."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22455
+
+- name: "MEDIUM | V-22456 | AUDIT | The SSH client must be configured to only use the SSHv2 protocol."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22456
+
+- name: "MEDIUM | V-22456 | PATCH | The SSH client must be configured to only use the SSHv2 protocol."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22456
+
+- name: "MEDIUM | V-22458 | AUDIT | The SSH daemon must be configured to only use FIPS 140-2 approved ciphers."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22458
+
+- name: "MEDIUM | V-22458 | PATCH | The SSH daemon must be configured to only use FIPS 140-2 approved ciphers."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22458
+
+- name: "MEDIUM | V-22460 | AUDIT | The SSH daemon must be configured to only use Message Authentication Codes (MACs) employing FIPS 140-2 approved cryptographic hash algorithms."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22460
+
+- name: "MEDIUM | V-22460 | PATCH | The SSH daemon must be configured to only use Message Authentication Codes (MACs) employing FIPS 140-2 approved cryptographic hash algorithms."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22460
+
+- name: "MEDIUM | V-22461 | AUDIT | The SSH client must be configured to only use FIPS 140-2 approved ciphers."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22461
+
+- name: "MEDIUM | V-22461 | PATCH | The SSH client must be configured to only use FIPS 140-2 approved ciphers."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22461
+
+- name: "MEDIUM | V-22462 | AUDIT | The SSH client must be configured to not use Cipher-Block Chaining (CBC)-based ciphers."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22462
+
+- name: "MEDIUM | V-22462 | PATCH | The SSH client must be configured to not use Cipher-Block Chaining (CBC)-based ciphers."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22462
+
+- name: "MEDIUM | V-22463 | AUDIT | The SSH client must be configured to only use Message Authentication Codes (MACs) employing FIPS 140-2 approved cryptographic hash algorithms."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22463
+
+- name: "MEDIUM | V-22463 | PATCH | The SSH client must be configured to only use Message Authentication Codes (MACs) employing FIPS 140-2 approved cryptographic hash algorithms."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22463
+
+- name: "MEDIUM | V-22470 | AUDIT | The SSH daemon must restrict login ability to specific users and/or groups."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22470
+
+- name: "MEDIUM | V-22470 | PATCH | The SSH daemon must restrict login ability to specific users and/or groups."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22470
+
+- name: "MEDIUM | V-22471 | AUDIT | The SSH public host key files must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22471
+
+- name: "MEDIUM | V-22471 | PATCH | The SSH public host key files must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22471
+
+- name: "MEDIUM | V-22472 | AUDIT | The SSH private host key files must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22472
+
+- name: "MEDIUM | V-22472 | PATCH | The SSH private host key files must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22472
+
+- name: "MEDIUM | V-22485 | AUDIT | The SSH daemon must perform strict mode checking of home directory configuration files."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22485
+
+- name: "MEDIUM | V-22485 | PATCH | The SSH daemon must perform strict mode checking of home directory configuration files."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22485
+
+- name: "MEDIUM | V-22486 | AUDIT | The SSH daemon must use privilege separation."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22486
+
+- name: "MEDIUM | V-22486 | PATCH | The SSH daemon must use privilege separation."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22486
+
+- name: "MEDIUM | V-22487 | AUDIT | The SSH daemon must not allow rhosts RSA authentication."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22487
+
+- name: "MEDIUM | V-22487 | PATCH | The SSH daemon must not allow rhosts RSA authentication."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22487
+
+- name: "MEDIUM | V-22488 | AUDIT | The SSH daemon must not allow compression or must only allow compression after successful authentication."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22488
+
+- name: "MEDIUM | V-22488 | PATCH | The SSH daemon must not allow compression or must only allow compression after successful authentication."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22488
+
+- name: "MEDIUM | V-22489 | AUDIT | The SSH daemon must be configured with the Department of Defense (DoD) logon banner."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22489
+
+- name: "MEDIUM | V-22489 | PATCH | The SSH daemon must be configured with the Department of Defense (DoD) logon banner."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22489
+
+- name: "MEDIUM | V-22491 | AUDIT | The system must not have IP forwarding for IPv6 enabled, unless the system is an IPv6 router."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22491
+
+- name: "MEDIUM | V-22491 | PATCH | The system must not have IP forwarding for IPv6 enabled, unless the system is an IPv6 router."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22491
+
+- name: "MEDIUM | V-22492 | AUDIT | The Network File System (NFS) export configuration file must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22492
+
+- name: "MEDIUM | V-22492 | PATCH | The Network File System (NFS) export configuration file must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22492
+
+- name: "MEDIUM | V-22496 | AUDIT | All Network File System (NFS) exported system files and system directories must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22496
+
+- name: "MEDIUM | V-22496 | PATCH | All Network File System (NFS) exported system files and system directories must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22496
+
+- name: "MEDIUM | V-22499 | AUDIT | Samba must be configured to use an authentication mechanism other than 'share.'"
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22499
+
+- name: "MEDIUM | V-22499 | PATCH | Samba must be configured to use an authentication mechanism other than 'share.'"
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22499
+
+- name: "MEDIUM | V-22500 | AUDIT | Samba must be configured to use encrypted passwords."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22500
+
+- name: "MEDIUM | V-22500 | PATCH | Samba must be configured to use encrypted passwords."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22500
+
+- name: "MEDIUM | V-22501 | AUDIT | Samba must be configured to not allow guest access to shares."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22501
+
+- name: "MEDIUM | V-22501 | PATCH | Samba must be configured to not allow guest access to shares."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22501
+
+- name: "MEDIUM | V-22511 | AUDIT | The Stream Control Transmission Protocol (SCTP) must be disabled unless required."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22511
+
+- name: "MEDIUM | V-22511 | PATCH | The Stream Control Transmission Protocol (SCTP) must be disabled unless required."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22511
+
+- name: "MEDIUM | V-22514 | AUDIT | The Datagram Congestion Control Protocol (DCCP) must be disabled unless required."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22514
+
+- name: "MEDIUM | V-22514 | PATCH | The Datagram Congestion Control Protocol (DCCP) must be disabled unless required."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22514
+
+- name: "MEDIUM | V-22524 | AUDIT | The AppleTalk protocol must be disabled or not installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22524
+
+- name: "MEDIUM | V-22524 | PATCH | The AppleTalk protocol must be disabled or not installed."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22524
+
+- name: "MEDIUM | V-22530 | AUDIT | The Reliable Datagram Sockets (RDS) protocol must be disabled or not installed unless required."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22530
+
+- name: "MEDIUM | V-22530 | PATCH | The Reliable Datagram Sockets (RDS) protocol must be disabled or not installed unless required."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22530
+
+- name: "MEDIUM | V-22533 | AUDIT | The Transparent Inter-Process Communication (TIPC) protocol must be disabled or uninstalled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22533
+
+- name: "MEDIUM | V-22533 | PATCH | The Transparent Inter-Process Communication (TIPC) protocol must be disabled or uninstalled."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22533
+
+- name: "MEDIUM | V-22539 | AUDIT | The Bluetooth protocol handler must be disabled or not installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22539
+
+- name: "MEDIUM | V-22539 | PATCH | The Bluetooth protocol handler must be disabled or not installed."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22539
+
+- name: "MEDIUM | V-22541 | AUDIT | The IPv6 protocol handler must not be bound to the network stack unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22541
+
+- name: "MEDIUM | V-22541 | PATCH | The IPv6 protocol handler must not be bound to the network stack unless needed."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22541
+
+- name: "MEDIUM | V-22542 | AUDIT | The IPv6 protocol handler must be prevented from dynamic loading unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22542
+
+- name: "MEDIUM | V-22542 | PATCH | The IPv6 protocol handler must be prevented from dynamic loading unless needed."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22542
+
+- name: "MEDIUM | V-22546 | AUDIT | The system must not have Teredo enabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22546
+
+- name: "MEDIUM | V-22546 | PATCH | The system must not have Teredo enabled."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22546
+
+- name: "MEDIUM | V-22549 | AUDIT | The DHCP client must not send dynamic DNS updates."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22549
+
+- name: "MEDIUM | V-22549 | PATCH | The DHCP client must not send dynamic DNS updates."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22549
+
+- name: "MEDIUM | V-22550 | AUDIT | The system must ignore IPv6 ICMP redirect messages."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22550
+
+- name: "MEDIUM | V-22550 | PATCH | The system must ignore IPv6 ICMP redirect messages."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22550
+
+- name: "MEDIUM | V-22557 | AUDIT | If the system is using LDAP for authentication or account information, the LDAP TLS connection must require the server provide a certificate with a valid trust path to a trusted CA."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22557
+
+- name: "MEDIUM | V-22557 | PATCH | If the system is using LDAP for authentication or account information, the LDAP TLS connection must require the server provide a certificate with a valid trust path to a trusted CA."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22557
+
+- name: "MEDIUM | V-22558 | AUDIT | If the system is using LDAP for authentication or account information, the system must verify the LDAP server's certificate has not been revoked."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22558
+
+- name: "MEDIUM | V-22558 | PATCH | If the system is using LDAP for authentication or account information, the system must verify the LDAP server's certificate has not been revoked."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22558
+
+- name: "MEDIUM | V-22559 | AUDIT | If the system is using LDAP for authentication or account information the /etc/ldap.conf (or equivalent) file must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22559
+
+- name: "MEDIUM | V-22559 | PATCH | If the system is using LDAP for authentication or account information the /etc/ldap.conf (or equivalent) file must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22559
+
+- name: "MEDIUM | V-22560 | AUDIT | If the system is using LDAP for authentication or account information, the /etc/ldap.conf (or equivalent) file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22560
+
+- name: "MEDIUM | V-22560 | PATCH | If the system is using LDAP for authentication or account information, the /etc/ldap.conf (or equivalent) file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22560
+
+- name: "MEDIUM | V-22561 | AUDIT | If the system is using LDAP for authentication or account information, the /etc/ldap.conf (or equivalent) file must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22561
+
+- name: "MEDIUM | V-22561 | PATCH | If the system is using LDAP for authentication or account information, the /etc/ldap.conf (or equivalent) file must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22561
+
+- name: "MEDIUM | V-22563 | AUDIT | If the system is using LDAP for authentication or account information, the TLS certificate authority file and/or directory (as appropriate) must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22563
+
+- name: "MEDIUM | V-22563 | PATCH | If the system is using LDAP for authentication or account information, the TLS certificate authority file and/or directory (as appropriate) must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22563
+
+- name: "MEDIUM | V-22564 | AUDIT | If the system is using LDAP for authentication or account information, the TLS certificate authority file and/or directory (as appropriate) must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22564
+
+- name: "MEDIUM | V-22564 | PATCH | If the system is using LDAP for authentication or account information, the TLS certificate authority file and/or directory (as appropriate) must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22564
+
+- name: "MEDIUM | V-22565 | AUDIT | If the system is using LDAP for authentication or account information, the TLS certificate authority file and/or directory (as appropriate) must have mode 0644 (0755 for directories) or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22565
+
+- name: "MEDIUM | V-22565 | PATCH | If the system is using LDAP for authentication or account information, the TLS certificate authority file and/or directory (as appropriate) must have mode 0644 (0755 for directories) or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22565
+
+- name: "MEDIUM | V-22567 | AUDIT | For systems using NSS LDAP, the TLS certificate file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22567
+
+- name: "MEDIUM | V-22567 | PATCH | For systems using NSS LDAP, the TLS certificate file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22567
+
+- name: "MEDIUM | V-22568 | AUDIT | If the system is using LDAP for authentication or account information, the LDAP TLS certificate file must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22568
+
+- name: "MEDIUM | V-22568 | PATCH | If the system is using LDAP for authentication or account information, the LDAP TLS certificate file must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22568
+
+- name: "MEDIUM | V-22569 | AUDIT | If the system is using LDAP for authentication or account information, the LDAP TLS certificate file must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22569
+
+- name: "MEDIUM | V-22569 | PATCH | If the system is using LDAP for authentication or account information, the LDAP TLS certificate file must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22569
+
+- name: "MEDIUM | V-22571 | AUDIT | If the system is using LDAP for authentication or account information, the LDAP TLS key file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22571
+
+- name: "MEDIUM | V-22571 | PATCH | If the system is using LDAP for authentication or account information, the LDAP TLS key file must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22571
+
+- name: "MEDIUM | V-22572 | AUDIT | If the system is using LDAP for authentication or account information, the LDAP TLS key file must be group-owned by root, bin, or sys."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22572
+
+- name: "MEDIUM | V-22572 | PATCH | If the system is using LDAP for authentication or account information, the LDAP TLS key file must be group-owned by root, bin, or sys."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22572
+
+- name: "MEDIUM | V-22573 | AUDIT | If the system is using LDAP for authentication or account information, the LDAP TLS key file must have mode 0600 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22573
+
+- name: "MEDIUM | V-22573 | PATCH | If the system is using LDAP for authentication or account information, the LDAP TLS key file must have mode 0600 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22573
+
+- name: "MEDIUM | V-22582 | AUDIT | The system must employ a local firewall."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22582
+
+- name: "MEDIUM | V-22582 | PATCH | The system must employ a local firewall."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22582
+
+- name: "MEDIUM | V-22586 | AUDIT | The system's boot loader configuration files must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22586
+
+- name: "MEDIUM | V-22586 | PATCH | The system's boot loader configuration files must be owned by root."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22586
+
+- name: "MEDIUM | V-22587 | AUDIT | The system's boot loader configuration file(s) must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22587
+
+- name: "MEDIUM | V-22587 | PATCH | The system's boot loader configuration file(s) must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22587
+
+- name: "MEDIUM | V-22665 | AUDIT | The system must not be running any routing protocol daemons, unless the system is a router."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22665
+
+- name: "MEDIUM | V-22665 | PATCH | The system must not be running any routing protocol daemons, unless the system is a router."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22665
+
+- name: "MEDIUM | V-22702 | AUDIT | System audit logs must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-22702
+
+- name: "MEDIUM | V-22702 | PATCH | System audit logs must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-22702
+
+- name: "MEDIUM | V-23741 | AUDIT | TCP backlog queue sizes must be set appropriately."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-23741
+
+- name: "MEDIUM | V-23741 | PATCH | TCP backlog queue sizes must be set appropriately."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-23741
+
+- name: "MEDIUM | V-23952 | AUDIT | Mail relaying must be restricted."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-23952
+
+- name: "MEDIUM | V-23952 | PATCH | Mail relaying must be restricted."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-23952
+
+- name: "MEDIUM | V-23953 | AUDIT | The 'ldd' command must be disabled unless it protects against the execution of untrusted files."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-23953
+
+- name: "MEDIUM | V-23953 | PATCH | The 'ldd' command must be disabled unless it protects against the execution of untrusted files."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-23953
+
+- name: "MEDIUM | V-24384 | AUDIT | If the system is using LDAP for authentication or account information, the /etc/ldap.conf file (or equivalent) must not contain passwords."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-24384
+
+- name: "MEDIUM | V-24384 | PATCH | If the system is using LDAP for authentication or account information, the /etc/ldap.conf file (or equivalent) must not contain passwords."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-24384
+
+- name: "MEDIUM | V-24624 | AUDIT | The system boot loader must protect passwords using an MD5 or stronger cryptographic hash."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-24624
+
+- name: "MEDIUM | V-24624 | PATCH | The system boot loader must protect passwords using an MD5 or stronger cryptographic hash."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-24624
+
+- name: "MEDIUM | V-27275 | AUDIT | The system must not have the unnecessary 'news' account."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-27275
+
+- name: "MEDIUM | V-27275 | PATCH | The system must not have the unnecessary 'news' account."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-27275
+
+- name: "MEDIUM | V-27276 | AUDIT | The system must not have the unnecessary 'gopher' account."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-27276
+
+- name: "MEDIUM | V-27276 | PATCH | The system must not have the unnecessary 'gopher' account."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-27276
+
+- name: "MEDIUM | V-27279 | AUDIT | The system must not have the unnecessary 'ftp' account."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-27279
+
+- name: "MEDIUM | V-27279 | PATCH | The system must not have the unnecessary 'ftp' account."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-27279
+
+- name: "MEDIUM | V-27283 | AUDIT | The graphical desktop environment must set the idle timeout to no more than 15 minutes."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-27283
+
+- name: "MEDIUM | V-27283 | PATCH | The graphical desktop environment must set the idle timeout to no more than 15 minutes."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-27283
+
+- name: "MEDIUM | V-27284 | AUDIT | Graphical desktop environments provided by the system must have automatic lock enabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-27284
+
+- name: "MEDIUM | V-27284 | PATCH | Graphical desktop environments provided by the system must have automatic lock enabled."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-27284
+
+- name: "MEDIUM | V-29236 | AUDIT | The audit system must be configured to audit failed attempts to access files and programs."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29236
+
+- name: "MEDIUM | V-29236 | PATCH | The audit system must be configured to audit failed attempts to access files and programs."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29236
+
+- name: "MEDIUM | V-29237 | AUDIT | The audit system must be configured to audit failed attempts to access files and programs."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29237
+
+- name: "MEDIUM | V-29237 | PATCH | The audit system must be configured to audit failed attempts to access files and programs."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29237
+
+- name: "MEDIUM | V-29238 | AUDIT | The audit system must be configured to audit failed attempts to access files and programs."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29238
+
+- name: "MEDIUM | V-29238 | PATCH | The audit system must be configured to audit failed attempts to access files and programs."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29238
+
+- name: "MEDIUM | V-29239 | AUDIT | The audit system must be configured to audit failed attempts to access files and programs."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29239
+
+- name: "MEDIUM | V-29239 | PATCH | The audit system must be configured to audit failed attempts to access files and programs."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29239
+
+- name: "MEDIUM | V-29240 | AUDIT | The audit system must be configured to audit file deletions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29240
+
+- name: "MEDIUM | V-29240 | PATCH | The audit system must be configured to audit file deletions."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29240
+
+- name: "MEDIUM | V-29241 | AUDIT | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29241
+
+- name: "MEDIUM | V-29241 | PATCH | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29241
+
+- name: "MEDIUM | V-29242 | AUDIT | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29242
+
+- name: "MEDIUM | V-29242 | PATCH | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29242
+
+- name: "MEDIUM | V-29243 | AUDIT | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29243
+
+- name: "MEDIUM | V-29243 | PATCH | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29243
+
+- name: "MEDIUM | V-29244 | AUDIT | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29244
+
+- name: "MEDIUM | V-29244 | PATCH | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29244
+
+- name: "MEDIUM | V-29245 | AUDIT | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29245
+
+- name: "MEDIUM | V-29245 | PATCH | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29245
+
+- name: "MEDIUM | V-29246 | AUDIT | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29246
+
+- name: "MEDIUM | V-29246 | PATCH | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29246
+
+- name: "MEDIUM | V-29247 | AUDIT | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29247
+
+- name: "MEDIUM | V-29247 | PATCH | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29247
+
+- name: "MEDIUM | V-29248 | AUDIT | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29248
+
+- name: "MEDIUM | V-29248 | PATCH | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29248
+
+- name: "MEDIUM | V-29249 | AUDIT | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29249
+
+- name: "MEDIUM | V-29249 | PATCH | The audit system must be configured to audit all administrative, privileged, and security actions."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29249
+
+- name: "MEDIUM | V-29250 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29250
+
+- name: "MEDIUM | V-29250 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29250
+
+- name: "MEDIUM | V-29251 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29251
+
+- name: "MEDIUM | V-29251 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29251
+
+- name: "MEDIUM | V-29252 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29252
+
+- name: "MEDIUM | V-29252 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29252
+
+- name: "MEDIUM | V-29253 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29253
+
+- name: "MEDIUM | V-29253 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29253
+
+- name: "MEDIUM | V-29255 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29255
+
+- name: "MEDIUM | V-29255 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29255
+
+- name: "MEDIUM | V-29257 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29257
+
+- name: "MEDIUM | V-29257 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29257
+
+- name: "MEDIUM | V-29259 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29259
+
+- name: "MEDIUM | V-29259 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29259
+
+- name: "MEDIUM | V-29261 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29261
+
+- name: "MEDIUM | V-29261 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29261
+
+- name: "MEDIUM | V-29272 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29272
+
+- name: "MEDIUM | V-29272 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29272
+
+- name: "MEDIUM | V-29274 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29274
+
+- name: "MEDIUM | V-29274 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29274
+
+- name: "MEDIUM | V-29275 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29275
+
+- name: "MEDIUM | V-29275 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29275
+
+- name: "MEDIUM | V-29279 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29279
+
+- name: "MEDIUM | V-29279 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29279
+
+- name: "MEDIUM | V-29281 | AUDIT | The audit system must be configured to audit the loading and unloading of dynamic kernel modules - delete_module."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29281
+
+- name: "MEDIUM | V-29281 | PATCH | The audit system must be configured to audit the loading and unloading of dynamic kernel modules - delete_module."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29281
+
+- name: "MEDIUM | V-29284 | AUDIT | The audit system must be configured to audit the loading and unloading of dynamic kernel modules - /sbin/insmod."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29284
+
+- name: "MEDIUM | V-29284 | PATCH | The audit system must be configured to audit the loading and unloading of dynamic kernel modules - /sbin/insmod."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29284
+
+- name: "MEDIUM | V-29286 | AUDIT | The audit system must be configured to audit the loading and unloading of dynamic kernel modules -/sbin/modprobe."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29286
+
+- name: "MEDIUM | V-29286 | PATCH | The audit system must be configured to audit the loading and unloading of dynamic kernel modules -/sbin/modprobe."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29286
+
+- name: "MEDIUM | V-29288 | AUDIT | The audit system must be configured to audit the loading and unloading of dynamic kernel modules - /sbin/rmmod"
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29288
+
+- name: "MEDIUM | V-29288 | PATCH | The audit system must be configured to audit the loading and unloading of dynamic kernel modules - /sbin/rmmod"
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29288
+
+- name: "MEDIUM | V-29289 | AUDIT | Files in cron script directories must have mode 0700 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-29289
+
+- name: "MEDIUM | V-29289 | PATCH | Files in cron script directories must have mode 0700 or less permissive."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-29289
+
+- name: "MEDIUM | V-58537 | AUDIT | The SSH daemon must not allow host-based authentication."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat2
+      - medium
+      - audit
+      - V-58537
+
+- name: "MEDIUM | V-58537 | PATCH | The SSH daemon must not allow host-based authentication."
+  command: true
+  tags:
+      - cat2
+      - medium
+      - patch
+      - V-58537
+

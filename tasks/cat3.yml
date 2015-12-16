@@ -1,0 +1,840 @@
+- name: "LOW | V-774 | AUDIT | The root user's home directory must not be the root directory (/)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-774
+
+- name: "LOW | V-774 | PATCH | The root user's home directory must not be the root directory (/)."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-774
+
+- name: "LOW | V-781 | AUDIT | All GIDs referenced in the /etc/passwd file must be defined in the /etc/group file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-781
+
+- name: "LOW | V-781 | PATCH | All GIDs referenced in the /etc/passwd file must be defined in the /etc/group file."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-781
+
+- name: "LOW | V-825 | AUDIT | Global initialization files must contain the 'mesg -n' or 'mesg n' commands."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-825
+
+- name: "LOW | V-825 | PATCH | Global initialization files must contain the 'mesg -n' or 'mesg n' commands."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-825
+
+- name: "LOW | V-835 | AUDIT | Sendmail logging must not be set to less than nine in the sendmail.cf file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-835
+
+- name: "LOW | V-835 | PATCH | Sendmail logging must not be set to less than nine in the sendmail.cf file."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-835
+
+- name: "LOW | V-899 | AUDIT | All interactive users must be assigned a home directory in the /etc/passwd file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-899
+
+- name: "LOW | V-899 | PATCH | All interactive users must be assigned a home directory in the /etc/passwd file."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-899
+
+- name: "LOW | V-900 | AUDIT | All interactive user home directories defined in the /etc/passwd file must exist."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-900
+
+- name: "LOW | V-900 | PATCH | All interactive user home directories defined in the /etc/passwd file must exist."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-900
+
+- name: "LOW | V-929 | AUDIT | The Network File System (NFS) export configuration file must have mode 0644 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-929
+
+- name: "LOW | V-929 | PATCH | The Network File System (NFS) export configuration file must have mode 0644 or less permissive."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-929
+
+- name: "LOW | V-1011 | AUDIT | Inetd or xinetd logging/tracing must be enabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-1011
+
+- name: "LOW | V-1011 | PATCH | Inetd or xinetd logging/tracing must be enabled."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-1011
+
+- name: "LOW | V-1062 | AUDIT | The root shell must be located in the / file system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-1062
+
+- name: "LOW | V-1062 | PATCH | The root shell must be located in the / file system."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-1062
+
+- name: "LOW | V-4384 | AUDIT | The SMTP service's SMTP greeting must not provide version information."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-4384
+
+- name: "LOW | V-4384 | PATCH | The SMTP service's SMTP greeting must not provide version information."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-4384
+
+- name: "LOW | V-4692 | AUDIT | The SMTP service must not have the EXPN feature active."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-4692
+
+- name: "LOW | V-4692 | PATCH | The SMTP service must not have the EXPN feature active."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-4692
+
+- name: "LOW | V-4693 | AUDIT | The SMTP service must not have the Verify (VRFY) feature active."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-4693
+
+- name: "LOW | V-4693 | PATCH | The SMTP service must not have the Verify (VRFY) feature active."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-4693
+
+- name: "LOW | V-11996 | AUDIT | Process core dumps must be disabled unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-11996
+
+- name: "LOW | V-11996 | PATCH | Process core dumps must be disabled unless needed."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-11996
+
+- name: "LOW | V-11997 | AUDIT | The kernel core dump data directory must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-11997
+
+- name: "LOW | V-11997 | PATCH | The kernel core dump data directory must be owned by root."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-11997
+
+- name: "LOW | V-12003 | AUDIT | A separate file system must be used for user home directories (such as /home or an equivalent)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-12003
+
+- name: "LOW | V-12003 | PATCH | A separate file system must be used for user home directories (such as /home or an equivalent)."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-12003
+
+- name: "LOW | V-22298 | AUDIT | The system must limit users to 10 simultaneous system logins, or a site-defined number, in accordance with operational requirements."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22298
+
+- name: "LOW | V-22298 | PATCH | The system must limit users to 10 simultaneous system logins, or a site-defined number, in accordance with operational requirements."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22298
+
+- name: "LOW | V-22308 | AUDIT | The system must restrict the ability to switch to the root user to members of a defined group."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22308
+
+- name: "LOW | V-22308 | PATCH | The system must restrict the ability to switch to the root user to members of a defined group."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22308
+
+- name: "LOW | V-22370 | AUDIT | System audit tool executables must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22370
+
+- name: "LOW | V-22370 | PATCH | System audit tool executables must be owned by root."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22370
+
+- name: "LOW | V-22371 | AUDIT | System audit tool executables must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22371
+
+- name: "LOW | V-22371 | PATCH | System audit tool executables must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22371
+
+- name: "LOW | V-22372 | AUDIT | System audit tool executables must have mode 0750 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22372
+
+- name: "LOW | V-22372 | PATCH | System audit tool executables must have mode 0750 or less permissive."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22372
+
+- name: "LOW | V-22374 | AUDIT | The audit system must alert the SA in the event of an audit processing failure."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22374
+
+- name: "LOW | V-22374 | PATCH | The audit system must alert the SA in the event of an audit processing failure."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22374
+
+- name: "LOW | V-22376 | AUDIT | The audit system must be configured to audit account creation."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22376
+
+- name: "LOW | V-22376 | PATCH | The audit system must be configured to audit account creation."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22376
+
+- name: "LOW | V-22377 | AUDIT | The audit system must be configured to audit account modification."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22377
+
+- name: "LOW | V-22377 | PATCH | The audit system must be configured to audit account modification."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22377
+
+- name: "LOW | V-22378 | AUDIT | The audit system must be configured to audit account disabling."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22378
+
+- name: "LOW | V-22378 | PATCH | The audit system must be configured to audit account disabling."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22378
+
+- name: "LOW | V-22382 | AUDIT | The audit system must be configured to audit account termination."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22382
+
+- name: "LOW | V-22382 | PATCH | The audit system must be configured to audit account termination."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22382
+
+- name: "LOW | V-22405 | AUDIT | The kernel core dump data directory must be group-owned by root, bin, sys, or system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22405
+
+- name: "LOW | V-22405 | PATCH | The kernel core dump data directory must be group-owned by root, bin, sys, or system."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22405
+
+- name: "LOW | V-22406 | AUDIT | The kernel core dump data directory must have mode 0700 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22406
+
+- name: "LOW | V-22406 | PATCH | The kernel core dump data directory must have mode 0700 or less permissive."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22406
+
+- name: "LOW | V-22418 | AUDIT | The system must log martian packets."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22418
+
+- name: "LOW | V-22418 | PATCH | The system must log martian packets."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22418
+
+- name: "LOW | V-22422 | AUDIT | All local file systems must employ journaling or another mechanism ensuring file system consistency."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22422
+
+- name: "LOW | V-22422 | PATCH | All local file systems must employ journaling or another mechanism ensuring file system consistency."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22422
+
+- name: "LOW | V-22473 | AUDIT | The SSH daemon must not permit GSSAPI authentication unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22473
+
+- name: "LOW | V-22473 | PATCH | The SSH daemon must not permit GSSAPI authentication unless needed."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22473
+
+- name: "LOW | V-22474 | AUDIT | The SSH client must not permit GSSAPI authentication unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22474
+
+- name: "LOW | V-22474 | PATCH | The SSH client must not permit GSSAPI authentication unless needed."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22474
+
+- name: "LOW | V-22475 | AUDIT | The SSH daemon must not permit Kerberos authentication unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22475
+
+- name: "LOW | V-22475 | PATCH | The SSH daemon must not permit Kerberos authentication unless needed."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22475
+
+- name: "LOW | V-22576 | AUDIT | The system must use available memory address randomization techniques."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22576
+
+- name: "LOW | V-22576 | PATCH | The system must use available memory address randomization techniques."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22576
+
+- name: "LOW | V-22577 | AUDIT | Automated file system mounting tools must not be enabled unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22577
+
+- name: "LOW | V-22577 | PATCH | Automated file system mounting tools must not be enabled unless needed."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22577
+
+- name: "LOW | V-22579 | AUDIT | The system must have USB Mass Storage disabled unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22579
+
+- name: "LOW | V-22579 | PATCH | The system must have USB Mass Storage disabled unless needed."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22579
+
+- name: "LOW | V-22580 | AUDIT | The system must have IEEE 1394 (Firewire) disabled unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22580
+
+- name: "LOW | V-22580 | PATCH | The system must have IEEE 1394 (Firewire) disabled unless needed."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22580
+
+- name: "LOW | V-22584 | AUDIT | The system must use a Linux Security Module configured to limit the privileges of system services."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22584
+
+- name: "LOW | V-22584 | PATCH | The system must use a Linux Security Module configured to limit the privileges of system services."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22584
+
+- name: "LOW | V-22598 | AUDIT | Auditing must be enabled at boot by setting a kernel parameter."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-22598
+
+- name: "LOW | V-22598 | PATCH | Auditing must be enabled at boot by setting a kernel parameter."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-22598
+
+- name: "LOW | V-23736 | AUDIT | The system must use a separate file system for /var."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-23736
+
+- name: "LOW | V-23736 | PATCH | The system must use a separate file system for /var."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-23736
+
+- name: "LOW | V-23738 | AUDIT | The system must use a separate file system for the system audit data path."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-23738
+
+- name: "LOW | V-23738 | PATCH | The system must use a separate file system for the system audit data path."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-23738
+
+- name: "LOW | V-23739 | AUDIT | The system must use a separate file system for /tmp (or equivalent)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-23739
+
+- name: "LOW | V-23739 | PATCH | The system must use a separate file system for /tmp (or equivalent)."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-23739
+
+- name: "LOW | V-24357 | AUDIT | The system must be configured to send audit/system records to a remote audit server."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-24357
+
+- name: "LOW | V-24357 | PATCH | The system must be configured to send audit/system records to a remote audit server."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-24357
+

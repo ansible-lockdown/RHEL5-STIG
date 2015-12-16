@@ -1,2 +1,10 @@
 ---
 # tasks file for RHEL5-STIG
+- include: cat1.yml
+  when: rhel5stig_cat1
+
+- include: cat2.yml
+  when: rhel5stig_cat2
+
+- include: cat3.yml
+  when: rhel5stig_cat3
